@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="dollars">$</string>
+    <string name="rupees">₹</string>
+    <string name="marioDescription">Mario Image</string>
+    <string name="convert">Convert</string>
+    <string name="hint">1</string>
+    <string name="rupeeRate">67.73</string>
+</resources>

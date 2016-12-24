@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.droidgyaan.soumik.currencyconverter.MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.5"
+    android:background="#ffff00"
+    >
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="268dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/android2"
+        tools:layout_editor_absoluteY="6dp"
+        android:contentDescription="@string/marioDescription"
+        tools:ignore="RtlHardcoded" />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:id="@+id/dollarsign"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:paddingTop="20sp"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:text="@string/dollars"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15sp"
+            android:layout_marginStart="10sp"
+            />
+
+        <EditText
+            android:id="@+id/dollarEntry"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/dollarsign"
+            android:textSize="20sp"
+            android:paddingTop="20sp"
+            android:labelFor="@id/dollarsign"
+            android:hint="@string/hint"
+            android:layout_marginTop="18sp"
+            android:inputType="number"
+            />
+        <TextView
+            android:id="@+id/rupeeSign"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:paddingTop="20sp"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:text="@string/rupees"
+            android:layout_below="@id/dollarsign"
+            android:layout_alignParentEnd="false"
+            android:layout_marginTop="15sp"
+            android:layout_marginStart="10sp"
+             />
+
+        <TextView
+            android:id="@+id/rupeeEntry"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dollarEntry"
+            android:layout_toEndOf="@id/dollarsign"
+            android:textSize="20sp"
+            android:paddingTop="20sp"
+            android:labelFor="@id/rupeeSign"
+            android:layout_marginTop="18sp"
+            android:text="@string/rupeeRate"
+            />
+
+        <Button
+            android:id="@+id/Convert"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rupeeSign"
+            android:text="@string/convert"
+            android:layout_marginTop="20sp"
+            android:layout_centerHorizontal="true"
+            android:padding="20sp"
+            android:onClick="buttonPressed"
+            />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
